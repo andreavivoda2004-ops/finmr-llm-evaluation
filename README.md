@@ -43,11 +43,11 @@ requirements.txt
 
 ## Come eseguire
 Tutta la pipeline è nel file `notebook/finmr_eval.py`. Per valutare un modello:
-1. Imposta la chiave OpenRouter nella variabile d'ambiente `OPENROUTER_API_KEY`
+1. Impostare la chiave OpenRouter nella variabile d'ambiente `OPENROUTER_API_KEY`
    (in Google Colab: aggiungila nei **Secrets** con lo stesso nome). La chiave **non** è nel codice.
-2. Nella sezione **CONFIG** in cima al file scegli `MODEL` (lo slug OpenRouter) e
+2. Nella sezione **CONFIG** in cima al file scegliere `MODEL` (lo slug OpenRouter) e
    `REASONING_MAX_TOKENS` (400 per la maggior parte dei modelli, 1200 per Kimi K3).
-3. Esegui:
+3. Eseguire:
 ```bash
 pip install -r requirements.txt
 export OPENROUTER_API_KEY="la-tua-chiave"   # su Windows: set OPENROUTER_API_KEY=...
